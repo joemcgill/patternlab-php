@@ -1,0 +1,16 @@
+{
+  "name": "common-reader-styleguide",
+  "version": "0.0.1",
+  "description": "- [Pattern Lab Website](http://patternlab.io/) - [About Pattern Lab](http://patternlab.io/about.html) - [Documentation](http://patternlab.io/docs/index.html) - [Demo](http://demo.patternlab.io/)",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-connect": "^0.7.1",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-shell": "^0.7.0",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1"
+  }
+}
