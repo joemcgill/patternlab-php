@@ -55,13 +55,13 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 
 
 
-@import "scss/generic/variables";
-@import "scss/generic/mixins";
-@import "scss/generic/reset";
+// @import "scss/generic/variables";
+// @import "scss/generic/mixins";
+// @import "scss/generic/reset";
 
 
 // BOOSTRAP variables and mixins
-// @import "../bower_components/sass-bootstrap/lib/variables";
+@import "../bower_components/sass-bootstrap/lib/variables";
 @import "../bower_components/sass-bootstrap/lib/mixins";
 
 // BOOTSTRAP RESETS
@@ -72,64 +72,99 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /*------------------------------------*\
     $GLOBAL ELEMENTS
 \*------------------------------------*/
-@import "scss/base/global-classes";
-@import "scss/base/main";
-@import "scss/base/links";
-@import "scss/base/headings";
-@import "scss/base/text";
-@import "scss/base/lists";
-@import "scss/base/media";
-@import "scss/base/forms";
-@import "scss/base/tables";
-@import "scss/base/animation";
+// @import "scss/base/global-classes";
+// @import "scss/base/main";
+// @import "scss/base/links";
+// @import "scss/base/headings";
+// @import "scss/base/text";
+// @import "scss/base/lists";
+// @import "scss/base/media";
+// @import "scss/base/forms";
+// @import "scss/base/tables";
+// @import "scss/base/animation";
 
 // BOOTSTRAP CORE
-// @import "../bower_components/sass-bootstrap/scaffolding";
-// @import "../bower_components/sass-bootstrap/type";
-// @import "../bower_components/sass-bootstrap/code";
-// @import "../bower_components/sass-bootstrap/grid";
-// @import "../bower_components/sass-bootstrap/tables";
-// @import "../bower_components/sass-bootstrap/forms";
-// @import "../bower_components/sass-bootstrap/buttons";
-
-
+@import "../bower_components/sass-bootstrap/lib/scaffolding";
+@import "../bower_components/sass-bootstrap/lib/type";
+@import "../bower_components/sass-bootstrap/lib/code";
 
 
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
-@import "scss/objects/layout";
+// @import "scss/objects/layout";
+
+// BOOTSTRAP GRID
+@import "../bower_components/sass-bootstrap/lib/grid";
+
+//BOOTSTRAP UTILITIES
+@import "../bower_components/sass-bootstrap/lib/utilities";
+@import "../bower_components/sass-bootstrap/lib/responsive-utilities";
 
 
 /*------------------------------------*\
     $PAGE STRUCTURE
 \*------------------------------------*/
-@import "scss/objects/header";
-@import "scss/objects/nav";
-@import "scss/objects/main";
-@import "scss/objects/footer";
+// @import "scss/objects/header";
+// @import "scss/objects/nav";
+// @import "scss/objects/main";
+// @import "scss/objects/footer";
 
 
 
 /*------------------------------------*\
     $TEXT Styles
 \*------------------------------------*/
-@import "scss/objects/text";
+// @import "scss/objects/text";
+
+// BOOTSTRAP TYPE
+@import "../bower_components/sass-bootstrap/lib/type";
 
 
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
-@import "scss/objects/icons";
-@import "scss/objects/buttons";
-@import "scss/objects/blocks";
-@import "scss/objects/lists";
-@import "scss/objects/tooltip";
-@import "scss/objects/accordion";
-@import "scss/objects/tabs";
-@import "scss/objects/sections";
-@import "scss/objects/article";
-@import "scss/objects/comments";
-@import "scss/objects/messaging";
+// @import "scss/objects/icons";
+// @import "scss/objects/buttons";
+// @import "scss/objects/blocks";
+// @import "scss/objects/lists";
+// @import "scss/objects/tooltip";
+// @import "scss/objects/accordion";
+// @import "scss/objects/tabs";
+// @import "scss/objects/sections";
+// @import "scss/objects/article";
+// @import "scss/objects/comments";
+// @import "scss/objects/messaging";
 
+// BOOTSTRAP COMPONENTS
+@import "../bower_components/sass-bootstrap/lib/tables";
+@import "../bower_components/sass-bootstrap/lib/forms";
+@import "../bower_components/sass-bootstrap/lib/buttons";
+@import "../bower_components/sass-bootstrap/lib/component-animations";
+@import "../bower_components/sass-bootstrap/lib/glyphicons";
+@import "../bower_components/sass-bootstrap/lib/dropdowns";
+@import "../bower_components/sass-bootstrap/lib/button-groups";
+@import "../bower_components/sass-bootstrap/lib/input-groups";
+@import "../bower_components/sass-bootstrap/lib/navs";
+@import "../bower_components/sass-bootstrap/lib/navbar";
+@import "../bower_components/sass-bootstrap/lib/breadcrumbs";
+@import "../bower_components/sass-bootstrap/lib/pagination";
+@import "../bower_components/sass-bootstrap/lib/pager";
+@import "../bower_components/sass-bootstrap/lib/labels";
+@import "../bower_components/sass-bootstrap/lib/badges";
+@import "../bower_components/sass-bootstrap/lib/jumbotron";
+@import "../bower_components/sass-bootstrap/lib/thumbnails";
+@import "../bower_components/sass-bootstrap/lib/alerts";
+@import "../bower_components/sass-bootstrap/lib/progress-bars";
+@import "../bower_components/sass-bootstrap/lib/media";
+@import "../bower_components/sass-bootstrap/lib/list-group";
+@import "../bower_components/sass-bootstrap/lib/panels";
+@import "../bower_components/sass-bootstrap/lib/wells";
+@import "../bower_components/sass-bootstrap/lib/close";
 
+// Components w/ JavaScript
+/* REQUIRES BOOTSTRAP JS FILES */
+// @import "../bower_components/sass-bootstrap/lib/modals";
+// @import "../bower_components/sass-bootstrap/lib/tooltip";
+// @import "../bower_components/sass-bootstrap/lib/popovers";
+// @import "../bower_components/sass-bootstrap/lib/carousel";
