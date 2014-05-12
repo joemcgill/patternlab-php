@@ -55,14 +55,9 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 
 
 
-// @import "scss/generic/variables";
-// @import "scss/generic/mixins";
+@import "scss/generic/variables";
+@import "scss/generic/mixins";
 // @import "scss/generic/reset";
-
-
-// BOOSTRAP variables and mixins
-@import "../bower_components/sass-bootstrap/lib/variables";
-@import "../bower_components/sass-bootstrap/lib/mixins";
 
 // BOOTSTRAP RESETS
 @import "../bower_components/sass-bootstrap/lib/normalize";
