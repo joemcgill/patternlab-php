@@ -101,6 +101,10 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /*------------------------------------*\
     $PAGE STRUCTURE
 \*------------------------------------*/
+.page {
+    @extend .container;
+}
+
 // @import "scss/objects/header";
 // @import "scss/objects/nav";
 // @import "scss/objects/main";
