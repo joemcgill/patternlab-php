@@ -1,0 +1,11 @@
+.sg-main {
+	@extend .container;
+}
+
+.sg-patterns {
+	@extend .row;
+}
+
+.sg-pattern {
+	@extend .col-sm-12;
+}
