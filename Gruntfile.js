@@ -13,7 +13,7 @@ module.exports = function(grunt) {
     // Task configuration.
     shell: {
       patternlab: {
-        command: 'php core/builder.php -gp'
+        command: 'php core/builder.php -g'
       }
     },
 
