@@ -10,10 +10,28 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
+
+    copy: {
+      dist: {
+          files: [{
+              expand: true,
+              dot: true,
+              cwd: 'source',
+              dest: 'public',
+              src: [
+                  '/images/{,*/}*.{ico,png,svg,jpg,gif}',
+              ]
+          }]
+      },
+    },
+
     // Task configuration.
     shell: {
       patternlab: {
         command: 'php core/builder.php -g'
+      },
+      patternlabPatterns: {
+        command: 'php core/builder.php -gp'
       }
     },
 
@@ -34,8 +52,13 @@ module.exports = function(grunt) {
 
     watch: {
       options: {
-        spawn: false,
-        livereload: '<%= connect.options.livereload %>'
+        // spawn: false,
+        livereload: {
+          options: {livereload: '<%= connect.options.livereload %>'},
+          files: [
+            'public/**/*'
+          ]
+        }
       },
       html: {
         files: [
@@ -43,15 +66,25 @@ module.exports = function(grunt) {
           'source/_patterns/**/*.json',
           'source/_data/*.json',
         ],
-        tasks: [ 'shell:patternlab' ],
+        tasks: [ 'shell:patternlabPatterns' ],
       },
-      css: {
+      sass: {
         files: [
           'source/css/*.scss',
           'source/css/**/*.scss',
           'public/styleguide/css/**/*.scss'
         ],
         tasks: ['sass'],
+      },
+      images: {
+        files: [
+          'source/images/**/*.svg',
+          'source/images/**/*.png',
+          'source/images/**/*.jpg',
+          'source/images/**/*.gif',
+          'source/images/**/*.ico'
+        ],
+        tasks: ['copy:dist'],
       }
     },
 
